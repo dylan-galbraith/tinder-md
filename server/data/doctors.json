@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "dr. oz",
+    "specialties": [],
+    "location": "some location",
+    "languages": [],
+    "specialCares": [],
+    "years": 1,
+    "testimonials": [],
+    "image": "image.path"
+  }
+]

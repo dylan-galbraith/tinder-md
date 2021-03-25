@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "firstName": "name",
+    "lastName": "name",
+    "preferredLanguage": "language",
+    "english": true,
+    "image": "image.path",
+    "symptoms": [],
+    "location": "location",
+    "specialRequirements": []
+  }
+]
