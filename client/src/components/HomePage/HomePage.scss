@@ -115,7 +115,18 @@
       width: 30%;
       text-align: center;
       padding: 0.5rem 0;
-      background-color: rgb(15,157,88,0.3);
+
+      &--1{
+        background-color: rgba(148, 241, 196, 0.8);
+      }
+
+      &--2 {
+        background-color: rgba(176, 204, 250, 0.8);
+      }
+
+      &--3 {
+        background-color: rgba(250, 222, 144, 0.8);
+      }
     }
 
     &__text {
@@ -145,6 +156,10 @@
   &__2 {
     background-image: url('../../assets/images/doctor-2.jpg');
     background-size: cover;
+  }
 
+  &__3 {
+    background-image: url('../../assets/images/doctor-3.jpg');
+    background-size: cover;
   }
 }
