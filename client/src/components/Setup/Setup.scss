@@ -1,0 +1,25 @@
+@use "../../partials/variables" as *;
+
+.setup {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 8.6875rem;
+  padding: 0 1.5rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+
+  &__inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #676565;
+    margin-bottom: 1.25rem;
+  }
+}

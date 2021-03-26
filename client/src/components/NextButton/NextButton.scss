@@ -1,0 +1,21 @@
+@use "../../partials/reset" as *;
+// @use "../../partials/typography" as *;
+@use "../../partials/variables" as *;
+
+.next-button {
+  position: absolute;
+  bottom: 42px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.25rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: $google-blue;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
