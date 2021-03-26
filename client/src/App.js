@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import './App.scss';
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
@@ -26,6 +26,7 @@ function App() {
           <Route path="/home" component={HomePage}/>
           <Route path="/chat" component={Chat}/>
           <Route path="/profile" component={Profile}/>
+          <Redirect from="/" to="/login" />
         </Switch>
       </BrowserRouter>
     </>
