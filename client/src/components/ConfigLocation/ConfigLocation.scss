@@ -1,0 +1,30 @@
+
+.config-location {
+  padding: 1rem;
+  color: gray;
+
+  &__heading {
+    padding-top: 0.5rem;
+  }
+
+  &__input {
+    margin: 1rem 0;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  &__section {
+    padding: 2rem 0;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__geo {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+  }
+}

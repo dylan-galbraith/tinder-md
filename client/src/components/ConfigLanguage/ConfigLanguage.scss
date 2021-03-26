@@ -1,14 +1,61 @@
 @use "../../partials/globals" as *;
 @use "../../partials/variables" as *;
 
-.content-1 {
+.languages {
   margin: 2rem;
   display: flex;
   flex-direction: column;
 
   &__title {
     color: #706E6E;
-    font-size: .85rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 2rem 1rem;
+  }
+
+  &__dropdown {
+    height: 2.5rem;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+  }
+
+  &__arrow {
+    width: 1.25rem;
+    height: 0.625rem;
+    position: absolute;
+    right: 50px;
+    top: 230px;
+  }
+}
+
+.form {
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+  }
+
+  &__input {
+    border-bottom: 1.5px solid #CACACA;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+
+    &--name {
+      margin-bottom: 2rem;
+    }
+    &--date {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__paragraph {
+    margin-top: -1rem;
   }
 }
