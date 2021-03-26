@@ -46,7 +46,7 @@ function ConfigLanguage() {
       <BackButton link="/config-0-welcome"/>
       <NextButton link="/config-2-gender" />
     </div>
-    </div>
+    // </div>
   );
 }
 

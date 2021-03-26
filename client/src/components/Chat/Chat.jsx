@@ -5,7 +5,9 @@ import "./Chat.scss";
 function Chat() {
   return (
     <>
-      <div className="header"></div>
+      <div className="header">
+        <h2 className="header__title">Chat</h2>
+      </div>
       <div className="chat">
         <div className="chat__intro">
           <p className="chat__intro--text">You matched with Dr. Kathryn J. Atkinson on 2021-03-11.</p>
