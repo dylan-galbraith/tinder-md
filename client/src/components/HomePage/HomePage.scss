@@ -1,0 +1,78 @@
+@use '../../partials/globals' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/variables' as *;
+
+.home {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    background-color: lightgray;
+    margin: 0 0 3rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  &__image {
+    margin: 0 2rem;
+    height: 12rem;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  &__doctor-name {
+    font-weight: 400;
+  }
+
+  &__languages__item {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+  }
+
+  &__bio {
+    margin: 0 2rem;
+    font-size: 0.8rem;
+  }
+
+  &__specialty {
+    margin-bottom: 0.2rem;
+  }
+
+  &__location {
+    display: flex;
+    align-items: flex-start;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.4rem;
+    }
+  }
+
+  &__little-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    &__item {
+      border: 1px solid lightgray;
+      border-radius: 0.5rem;
+      width: 30%;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    &__text {
+      margin: 0;
+    }
+
+    &__value {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+}
