@@ -1,0 +1,31 @@
+
+.config-gender {
+  padding: 1rem;
+  color: gray;
+
+  &__heading {
+    padding-top: 0.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin: 0.5rem 0;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  &__section {
+    padding: 2rem 0;
+  }
+
+  &__button {
+    margin: 0.5rem 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(15,157,88,0.3);
+  }
+}
