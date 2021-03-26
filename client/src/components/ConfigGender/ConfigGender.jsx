@@ -6,6 +6,7 @@ import Setup from "../Setup/Setup";
 function ConfigGender() {
   return (
     <div>
+
       <Setup progressFill="progress__inner--40" />
       <main className="config-gender">
         <div className="config-gender__section">

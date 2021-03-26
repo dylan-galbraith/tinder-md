@@ -7,6 +7,7 @@ import micIcon from '../../assets/icons/mic-icon.svg';
 function ConfigLocation() {
   return (
     <div>
+
       <Setup progressFill="progress__inner--60"/>
       <main className="config-location">
         <div className="config-location__section">
