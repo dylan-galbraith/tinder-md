@@ -6,7 +6,7 @@ function Chat() {
   return (
     <>
       <div className="header">
-        <h2 className="header__title">Chat</h2>
+        <h2 className="header__title">Dr. Kathryn J. Atkinson</h2>
       </div>
       <div className="chat">
         <div className="chat__intro">

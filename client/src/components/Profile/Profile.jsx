@@ -26,13 +26,13 @@ function Profile() {
             <li className="top-list__item">
               <div className="top-list__item--left">
                 <h5 className="top-list__item--label">name</h5>
-                <h4 className="top-list__item--input">John Doe</h4>
+                <h4 className="top-list__item--input">Ricardo Gonzalez</h4>
                 <h5 className="top-list__item--label">Age</h5>
-                <h4 className="top-list__item--input">40</h4>
+                <h4 className="top-list__item--input">60</h4>
               </div>
               <div className="top-list__item--right">
                 <h5 className="top-list__item--label">birthday</h5>
-                <h4 className="top-list__item--input">August 30, 1980</h4>
+                <h4 className="top-list__item--input">August 30, 1961</h4>
                 <h5 className="top-list__item--label">sex</h5>
                 <h4 className="top-list__item--input">male</h4>
               </div>
@@ -47,9 +47,9 @@ function Profile() {
           <ul className="bottom-list">
             <li className="bottom-list__item">
                 <h5 className="bottom-list__item--label">country</h5>
-                <h4 className="bottom-list__item--input">canada</h4>
+                <h4 className="bottom-list__item--input">Canada</h4>
                 <h5 className="bottom-list__item--label">city</h5>
-                <h4 className="bottom-list__item--input">vancouver</h4>
+                <h4 className="bottom-list__item--input">Toronto</h4>
                 <h5 className="bottom-list__item--label">preferred language</h5>
                 <h4 className="bottom-list__item--input">english</h4>
                 <h5 className="bottom-list__item--label">special requirements</h5>
@@ -66,8 +66,8 @@ function Profile() {
           </div>
           <ul className="bottom-list">
             <li className="bottom-list__item">
-                <h5 className="bottom-list__item--label">country</h5>
-                <h4 className="bottom-list__item--input">canada</h4>
+                <h5 className="bottom-list__item--label">DOCUMENT UPLOADS</h5>
+                <h4 className="bottom-list__item--input">4 Files</h4>
                 
             </li>
           </ul>

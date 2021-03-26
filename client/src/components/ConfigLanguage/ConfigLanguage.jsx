@@ -7,7 +7,7 @@ import ArrowIcon from "../../assets/icons/drop-arrow.svg";
 function ConfigLanguage() {
   return (
     <div>
-      <Setup progress={"progress__inner--20"} />
+      <Setup progressFill={"progress__inner--20"} />
       <div className="languages">
         <img className="languages__arrow" src={ArrowIcon} alt="" />
         <label className="languages__title" htmlFor="languages">My preferred language is</label>
@@ -22,7 +22,7 @@ function ConfigLanguage() {
         <div className="form__input-container">
           <div className="form__container">
             <label className="languages__title" htmlFor="name">Full Legal Name: </label>
-            <input className="form__input--name" className="form__input" type="text" name="name"/>
+            <input className="form__input--name" value="Ricardo Gonzalez" className="form__input" type="text" name="name"/>
           </div>
           <div className="form__container">
             <label className="languages__title" htmlFor="birthday">Birthday: </label>
@@ -30,7 +30,7 @@ function ConfigLanguage() {
           </div>
           <div className="form__container">
             <label className="languages__title" htmlFor="accomodations">Medical Accommodations: </label>
-            <input className="form__input--date" className="form__input" type="text" name="accomodations" />
+            <input className="form__input--date" value="hearing aid" className="form__input" type="text" name="accomodations" />
             <p className="form__paragraph">If applicable*</p> 
           </div>
         </div>
