@@ -1,22 +1,28 @@
 import { Link } from "react-router-dom";
+import "./Login.scss";
 
-function Login() {
+function Login(props) {
+
+  const goHome = () => {
+    props.history.push("/");
+  }
+
   return (
-    <>
-      <img src="http://placehold.it/50x50" alt=""/>
-      <h1>Tinder MD</h1>
-      <form>
-        <div>
-          <input type="email" name="email" placeholder="username/email" required/>
-          <input type="password" name="password" placeholder="password" required/>
-          <a href="#">Forgot Password?</a>
+    <div className="logo">
+      <img className="logo__avatar" src="http://placehold.it/50x50" alt=""/>
+      <h3 className="logo__title">Match MD by Google</h3>
+      <form className="form">
+        <div className="form__box">
+          <input className="form__box--email" type="email" name="email" placeholder="username" required/>
+          <input className="form__box--pw" type="password" name="password" placeholder="password" required/>
+          <a className="form__box--tag" href="#">Forgot Password?</a>
         </div>
-        <Link to="/">Login</Link>
+        <button onClick={goHome} className="form__button">Sign in with Google Account</button>
       </form>
-      <span>
-        Don't have an account? <Link to="/signup">Create One</Link>
-      </span>
-    </>
+      <div className="logo__bottom">
+        Don't have an account? <span className="logo__bottom--link"><Link to="/signup">Create One</Link></span>
+      </div>
+    </div>
   )
 }
 

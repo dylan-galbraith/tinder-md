@@ -11,9 +11,7 @@ function App() {
       <h1>Home Page</h1>
       <BrowserRouter>
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
+          <Route path="/login" render={(props) => <Login {...props} /> } />
           <Route path="/signup">
             <Signup />
           </Route>
