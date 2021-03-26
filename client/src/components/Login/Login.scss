@@ -5,19 +5,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 1rem;
+  margin: 1rem 2rem;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
 
   &__avatar {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
   }
   &__title {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
   &__bottom {
     padding-top: 1rem;
-    font-size: .75rem;
-    color: black;
+    font-size: 1rem;
+    color: #323232;
 
     &--link {
       font-weight: bold;
@@ -38,19 +50,31 @@
     margin-top: 5rem;
 
     &--email {
-    border-bottom: 1px solid #BDC5D5;
-    margin-bottom: .5rem;
-    padding: .3rem 0;
+      border-bottom: 1px solid #BDC5D5;
+      margin-bottom: 1rem;
+      padding: .75rem 0;
+
+      &::placeholder {
+        font-family: Roboto-G;
+        font-size: 1rem;
+        color: #686868;
+      }
     }
 
     &--pw {
     border-bottom: 1px solid #BDC5D5;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     padding: .3rem 0;
+
+    &::placeholder {
+        font-family: Roboto-G;
+        font-size: 1rem;
+        color: #686868;
+      }
     }
     &--tag {
       color: $blue;
-      font-size: .60rem;
+      font-size: .875rem;
     }
   }
   &__button {
@@ -60,5 +84,9 @@
     padding: .75rem;
     border-radius: 5px;
     margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   }
 }

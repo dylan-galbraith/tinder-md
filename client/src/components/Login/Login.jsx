@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Login.scss";
+import Logo from "../../assets/connect-md-logo.png";
 
 function Login(props) {
 
@@ -9,8 +10,10 @@ function Login(props) {
 
   return (
     <div className="logo">
-      <img className="logo__avatar" src="http://placehold.it/50x50" alt=""/>
-      <h3 className="logo__title">Match MD by Google</h3>
+      <div className="logo__container">
+        <img className="logo__avatar" src={Logo} alt=""/>
+        <h3 className="logo__title">by Google</h3>
+      </div>
       <form className="form">
         <div className="form__box">
           <input className="form__box--email" type="email" name="email" placeholder="username" required/>
@@ -20,7 +23,7 @@ function Login(props) {
         <button onClick={goHome} className="form__button">Sign in with Google Account</button>
       </form>
       <div className="logo__bottom">
-        Don't have an account? <span className="logo__bottom--link"><Link to="/signup">Create One</Link></span>
+        Don't have an account? <span className="logo__bottom--link"><Link to="/config-0-welcome">Create One</Link></span>
       </div>
     </div>
   )
