@@ -1,0 +1,14 @@
+@use "../../partials/globals" as *;
+@use "../../partials/variables" as *;
+
+.content-1 {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    color: #706E6E;
+    font-size: .85rem;
+    font-weight: 500;
+  }
+}

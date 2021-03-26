@@ -1,6 +1,8 @@
+@use "./variables" as *;
 
 body {
   width: 100vw;
+  margin: 0;
 }
 
 a {
@@ -12,12 +14,35 @@ input {
   border-style: none;
   border: none;
   outline: none;
+  color: $text-grey;
+}
 
+select {
+  color: $text-grey;
+  padding: .25rem 0;
+  border-color: $light-grey;
+  font-size: .75rem;
 }
 
 button {
   border-style: none;
   border: none;
   outline: none;
-  font-family: "Roboto";
+  font-family: "Roboto-G";
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  margin: 0;
+}
+h4{
+  margin: 0;
+
+}
+h5 {
+  margin: 0;
+
 }

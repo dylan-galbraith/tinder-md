@@ -1,0 +1,140 @@
+@use "../../partials/globals" as *;
+@use "../../partials/variables" as *;
+
+.profile {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #C4C4C4;
+    margin-top: 2rem;
+
+    &--avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+    }
+    &--name {
+      font-size: 1.15rem;
+      font-weight: 400;
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 7px;
+  padding: 1rem;
+  
+
+  &__personal {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $google-green;
+    
+    &--title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+    }
+
+    &--heading {
+      font-size: .8rem;
+      font-weight: 400;
+    }
+
+    &--link {
+      color: $blue;
+      font-size: .8rem;
+      font-weight: 400;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+
+    &--title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+    }
+
+    &--heading {
+      font-size: .8rem;
+      font-weight: 400;
+    }
+
+    &--link {
+      color: $blue;
+      font-size: .8rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.top-list {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      margin-right: 4rem;
+    }
+
+    &--label {
+      text-transform: uppercase;
+      color: $text-grey;
+      font-size: .55rem;
+      font-weight: 400;
+      padding-bottom: .25rem;
+    }
+    &--input {
+      text-transform: capitalize;
+      font-size: .64rem;
+      font-weight: 400;
+      padding-bottom: .5rem;
+    }
+  }
+}
+
+.bottom-list {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &--label {
+      text-transform: uppercase;
+      color: $text-grey;
+      font-size: .55rem;
+      font-weight: 400;
+      padding-bottom: .25rem;
+    }
+    &--input {
+      text-transform: capitalize;
+      font-size: .64rem;
+      font-weight: 400;
+      padding-bottom: .5rem;
+    }
+  }
+}

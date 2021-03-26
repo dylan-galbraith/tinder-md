@@ -1,0 +1,31 @@
+@use "../../partials/globals" as *;
+@use "../../partials/variables" as *;
+
+.content-0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;;
+
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  &__heading {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: $google-green;
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  &__text {
+    padding-top: 2rem;
+    color: $text-grey;
+    font-size: .9rem;
+  }
+}
