@@ -1,6 +1,7 @@
 import React from 'react'
+import NextButton from "../NextButton/NextButton";
 
-function PSLanguage() {
+function ConfigLanguage() {
   return (
     <div>
       <h2>My preferred language is</h2>
@@ -13,8 +14,9 @@ function PSLanguage() {
         <option value="french">ma langue préférée est</option>
         <option value="hindi">मेरी पसंदीदा भाषा है</option>
       </select>
+      <NextButton link="/config-2-name" />
     </div>
   )
 }
 
-export default PSLanguage
+export default ConfigLanguage
