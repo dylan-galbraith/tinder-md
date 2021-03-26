@@ -1,18 +1,19 @@
 @use "../../partials/reset" as *;
 @use "../../partials/variables" as *;
 
-.next-button {
+.back-button {
   position: absolute;
   bottom: 42px;
-  right: 16px;
+  left: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 5.25rem;
   height: 2.5rem;
+  border: 1px solid $google-blue;
   border-radius: 5px;
-  background-color: $google-blue;
-  color: white;
+  background-color: white;
+  color: $google-blue;
   font-weight: 500;
   font-size: 0.875rem;
   text-transform: uppercase;
