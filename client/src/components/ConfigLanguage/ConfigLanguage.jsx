@@ -30,11 +30,12 @@ function ConfigLanguage() {
         <div className="form__accommodations-container">
           <label htmlFor="accomodations">Medical Accommodations: </label>
           <input type="text" name="accomodations"/>
+          <p>If applicable*</p> 
         </div>
       </div>
       
       <BackButton link="/config-0-welcome"/>
-      <NextButton link="/config-2-info" />
+      <NextButton link="/config-2-gender" />
     </div>
   )
 }

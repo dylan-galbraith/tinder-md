@@ -1,5 +1,6 @@
 import "./ConfigFinal.scss";
-import NextButton from "../NextButton/NextButton";
+import SubmitButton from "../SubmitButton/SubmitButton";
+import BackButton from "../BackButton/BackButton";
 import Setup from "../Setup/Setup";
 import { Component } from 'react';
 import micIcon from '../../assets/icons/mic-icon.svg';
@@ -44,8 +45,9 @@ class ConfigFinal extends Component {
           <button className="config-final__upload">Upload</button>
   
         </div>
-  
-        <NextButton link="/config-2-info" />
+
+        <BackButton link="/config-3-location" />
+        <SubmitButton link="/home" />
       </div>
     )
   
