@@ -1,0 +1,38 @@
+  @use "../../partials/variables" as *;
+
+  @mixin progress-style {
+    height: 100%;
+    border-radius: 10px;
+    background-color: $google-green;
+  }
+  
+  .progress {
+    height: 0.625rem;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+
+    &__inner {
+
+      &--20 {
+        width: 20%;
+        @include progress-style;
+      }
+
+      &--40 {
+        width: 40%;
+        @include progress-style;
+      }
+
+      &--60 {
+        width: 60%;
+        @include progress-style;
+      }
+      
+      &--80 {
+        width: 80%;
+        @include progress-style;
+      }
+    }
+  }

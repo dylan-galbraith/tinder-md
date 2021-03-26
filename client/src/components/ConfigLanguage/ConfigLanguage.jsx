@@ -1,9 +1,11 @@
-import React from 'react'
+import "./ConfigLanguage.scss";
 import NextButton from "../NextButton/NextButton";
+import Setup from "../Setup/Setup";
 
 function ConfigLanguage() {
   return (
     <div>
+      <Setup />
       <h2>My preferred language is</h2>
       <label htmlFor="languages">My preferred language is</label>
 
@@ -14,9 +16,13 @@ function ConfigLanguage() {
         <option value="french">ma langue préférée est</option>
         <option value="hindi">मेरी पसंदीदा भाषा है</option>
       </select>
-      <NextButton link="/config-2-name" />
+      
+      <label htmlFor="name">
+        Full Legal Name: 
+      </label>
+      <NextButton link="/config-2-info" />
     </div>
   )
 }
 
-export default ConfigLanguage
+export default ConfigLanguage;
