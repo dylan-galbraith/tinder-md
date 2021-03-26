@@ -7,16 +7,30 @@
   flex-direction: column;
   margin-bottom: 20vh;
 
+  &__top {
+    background-color: $google-light-blue;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    &--icon {
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+    }
+  }
+
   &__header {
+    background-color: $google-light-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 2px solid #C4C4C4;
-    margin-top: 2rem;
+    padding-top: 2rem;
 
     &--avatar {
-      width: 92px;
-      height: 92px;
+      width: 85px;
+      height: 85px;
       border-radius: 50%;
     }
     &--name {
@@ -48,13 +62,13 @@
     }
 
     &--heading {
-      font-size: .8rem;
+      font-size: 1rem;
       font-weight: 400;
     }
 
     &--link {
       color: $blue;
-      font-size: .8rem;
+      font-size: 1rem;
       font-weight: 400;
     }
   }
@@ -72,13 +86,13 @@
     }
 
     &--heading {
-      font-size: .8rem;
+      font-size: 1rem;
       font-weight: 400;
     }
 
     &--link {
       color: $blue;
-      font-size: .8rem;
+      font-size: 1rem;
       font-weight: 400;
     }
   }
@@ -87,28 +101,31 @@
 .top-list {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   &__item {
     display: flex;
     width: 100%;
     margin-bottom: 1rem;
+    flex: 1;
 
     &--left {
+      width: 50%;
       display: flex;
       flex-direction: column;
-      margin-right: 4rem;
+      // margin-right: 4rem;
     }
 
     &--label {
       text-transform: uppercase;
       color: $text-grey;
-      font-size: .55rem;
+      font-size: .68rem;
       font-weight: 400;
       padding-bottom: .25rem;
     }
     &--input {
       text-transform: capitalize;
-      font-size: .64rem;
+      font-size: .78rem;
       font-weight: 400;
       padding-bottom: .5rem;
     }
@@ -126,15 +143,39 @@
     &--label {
       text-transform: uppercase;
       color: $text-grey;
-      font-size: .55rem;
+      font-size: .68rem;
       font-weight: 400;
       padding-bottom: .25rem;
     }
     &--input {
       text-transform: capitalize;
-      font-size: .64rem;
+      font-size: .78rem;
       font-weight: 400;
       padding-bottom: .5rem;
     }
+  }
+}
+
+.card__medical {
+  margin: 0 1rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 7px;
+  padding: 1rem;
+
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+  }
+
+  &--heading {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &--link {
+    color: $blue;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
