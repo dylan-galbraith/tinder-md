@@ -2,14 +2,19 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import {Link} from "react-router-dom";
 import "./Profile.scss";
+import avatar from "../../assets/images/avatar.png";
+import setting from "../../assets/icons/setting-icon.svg";
 
 function Profile() {
   return (
     <>
       <div className="profile">
+        <div className="profile__top">
+          <img className="profile__top--icon" src={setting} alt="setting icon" />
+        </div>
         <div className="profile__header">
-          <img className="profile__header--avatar" src="http://placehold.it/50x50" alt="" />
-          <h2 className="profile__header--name">Person's Name</h2>
+          <img className="profile__header--avatar" src={avatar} alt="" />
+          <h2 className="profile__header--name">Ricardo Gonzalez</h2>
         </div>
         <div className="card">
         <div className="card__personal">
@@ -52,6 +57,20 @@ function Profile() {
             </li>
           </ul>
         </div>
+        
+        </div>
+        <div className="card__medical">
+          <div className="card__medical--title">
+            <h3 className="card__medical--heading">Medical History</h3>
+            <Link className="card__medical--link" to="">View All</Link>
+          </div>
+          <ul className="bottom-list">
+            <li className="bottom-list__item">
+                <h5 className="bottom-list__item--label">country</h5>
+                <h4 className="bottom-list__item--input">canada</h4>
+                
+            </li>
+          </ul>
         </div>
       </div>
       <Navbar />
