@@ -15,7 +15,7 @@ function Login(props) {
         <div className="form__box">
           <input className="form__box--email" type="email" name="email" placeholder="username" required/>
           <input className="form__box--pw" type="password" name="password" placeholder="password" required/>
-          <a className="form__box--tag" href="#">Forgot Password?</a>
+          <Link to="/home" className="form__box--tag">Forgot Password?</Link>
         </div>
         <button onClick={goHome} className="form__button">Sign in with Google Account</button>
       </form>

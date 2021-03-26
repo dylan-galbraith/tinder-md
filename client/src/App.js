@@ -2,25 +2,24 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.scss';
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
-import PostSignup from "./components/PostSignup/PostSignup";
-import Navbar from "./components/Navbar/Navbar";
-
+import HomePage from "./components/HomePage/HomePage";
+import Chat from "./components/Chat/Chat";
+import Profile from "./components/Profile/Profile";
+import ConfigLanguage from "./components/ConfigLanguage/ConfigLanguage";
 
 function App() {
   return (
     <>
-      <h1>Home Page</h1>
       <BrowserRouter>
         <Switch>
           <Route path="/login" render={(props) => <Login {...props} /> } />
-          <Route path="/signup">
-            <Signup />
-          </Route>
-          <Route path="/post-signup">
-            <PostSignup />
-          </Route>
+          <Route path="/signup" component={Signup}/>
+          <Route path="/config-1-language" component={ConfigLanguage}/>
+          <Route path="/config-2-name" component={ConfigLanguage}/>
+          <Route path="/home" component={HomePage}/>
+          <Route path="/chat" component={Chat}/>
+          <Route path="/profile" component={Profile}/>
         </Switch>
-        <Navbar />
       </BrowserRouter>
     </>
   );
