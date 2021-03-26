@@ -6,7 +6,8 @@ function Setup(props) {
     <div className="setup">
       <div className="setup__inner-container">
         <h2 className="setup__title">Set Up</h2>
-        <ProgressBar class={props.progress} />
+        <ProgressBar class={props.progressFill} />
+
       </div>
     </div>
   )
