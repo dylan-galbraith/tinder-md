@@ -24,7 +24,7 @@ class ConfigFinal extends Component {
     console.log(this.state);
     return (
       <div>
-        <Setup />
+        <Setup progress={"progress__inner--80"} />
         <div className="config-final">
           <h2 className="config-final__heading">My current Health:</h2>
           <p className="config-final__text">Tell us how you feel, or any symptoms that you may be experiencing.</p>

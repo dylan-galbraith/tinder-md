@@ -6,7 +6,7 @@ import Setup from "../Setup/Setup";
 function ConfigLocation() {
   return (
     <div>
-      <Setup />
+      <Setup progress={"progress__inner--60"} />
       
       
       <BackButton link="/config-2-gender"/>

@@ -1,12 +1,12 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
 import "./Setup.scss";
 
-function Setup() {
+function Setup(props) {
   return (
     <div className="setup">
       <div className="setup__inner-container">
         <h2 className="setup__title">Set Up</h2>
-        <ProgressBar class={"progress__inner--20"} />
+        <ProgressBar class={props.progress} />
       </div>
     </div>
   )
