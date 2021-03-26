@@ -65,15 +65,15 @@ function HomePage() {
               </div>
               <p className="home__bio__text">Dr. Atkinson specializes in treating and managing allergies, asthma, and immunological disorders.</p>
               <div className="home__little-cards">
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--1">
                   <p className="home__little-cards__text">Patients</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={patientIcon} />520+</p>
                 </div>
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--2">
                   <p className="home__little-cards__text">Experience</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={experienceIcon} />8 years+</p>
                 </div>
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--3">
                   <p className="home__little-cards__text">Rating</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={ratingIcon} />4.0</p>
                 </div>
@@ -104,17 +104,56 @@ function HomePage() {
               </div>
               <p className="home__bio__text">Dr. Ayach specializes in treating heart attacks, heart failures, heart valve disease, arrhythmia, and high blood pressure.</p>
               <div className="home__little-cards">
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--1">
                   <p className="home__little-cards__text">Patients</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={patientIcon} />820+</p>
                 </div>
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--2">
                   <p className="home__little-cards__text">Experience</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={experienceIcon} />10 years+</p>
                 </div>
-                <div className="home__little-cards__item">
+                <div className="home__little-cards__item home__little-cards__item--3">
                   <p className="home__little-cards__text">Rating</p>
                   <p className="home__little-cards__value"><img className="home__little-cards__icon" src={ratingIcon} />4.1</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="home__card">
+            <div className="home__image doctor__3">
+              <div className="home__image--overlay">
+              </div>
+              <div className="home__image--text">
+                  <h3 className="home__doctor-name">Dr. Jeanie Choi Chen</h3>
+                  <div className="home__languages">
+                    <span className="home__languages__item">ENGLISH</span>
+                    <span className="home__languages__item">CANTONESE</span>
+                  </div>
+                </div>
+            </div>
+            <div className="home__bio">
+              <img onClick={saveHandler} src={greenSaveIcon} className="home__save-icon" />
+              <p className="home__specialty">Family Doctor</p>
+              <div className="home__location">
+                <img className="home__location__icon" src={locationIcon}/>
+                <div className="home__location__text">
+                  <span className="home__location__text--line">Toronto, ON</span>
+                  <span className="home__location__text--line">12 kilometers away</span>
+                </div>
+              </div>
+              <p className="home__bio__text">Dr. Chen specializes in identifying and treating diseases and injuries and addressing the prevention of health risks</p>
+              <div className="home__little-cards">
+                <div className="home__little-cards__item home__little-cards__item--1">
+                  <p className="home__little-cards__text">Patients</p>
+                  <p className="home__little-cards__value"><img className="home__little-cards__icon" src={patientIcon} />240+</p>
+                </div>
+                <div className="home__little-cards__item home__little-cards__item--2">
+                  <p className="home__little-cards__text">Experience</p>
+                  <p className="home__little-cards__value"><img className="home__little-cards__icon" src={experienceIcon} />6 years+</p>
+                </div>
+                <div className="home__little-cards__item home__little-cards__item--3">
+                  <p className="home__little-cards__text">Rating</p>
+                  <p className="home__little-cards__value"><img className="home__little-cards__icon" src={ratingIcon} />4.3</p>
                 </div>
               </div>
             </div>
