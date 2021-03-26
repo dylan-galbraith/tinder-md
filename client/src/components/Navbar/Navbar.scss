@@ -1,0 +1,26 @@
+@use "../../partials/variables" as *;
+@use "../../partials/globals" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem 2rem;
+  color: #818181;
+  border-top: 1px solid $light-grey;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--homeIcon, &--chatIcon, &--profileIcon {
+      width: 25px;
+      height: 25px
+    }
+
+    &--homeText, &--chatText, &--profileText {
+      font-size: .5rem;
+      padding-top: .1rem;
+    }
+  }
+}

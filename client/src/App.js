@@ -3,6 +3,7 @@ import './App.scss';
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import PostSignup from "./components/PostSignup/PostSignup";
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <PostSignup />
           </Route>
         </Switch>
+        <Navbar />
       </BrowserRouter>
     </>
   );
