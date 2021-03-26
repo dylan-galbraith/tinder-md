@@ -6,7 +6,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5.25rem;
+  height: 4.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,12 +30,13 @@
         cursor: pointer;
       }
 
-    &--homeIcon, &--chatIcon, &--profileIcon {
+    &--homeIcon, &--saveIcon, &--chatIcon, &--profileIcon {
       width: 25px;
       height: 25px;
+
     }
 
-    &--homeText, &--chatText, &--profileText {
+    &--homeText, &--saveText, &--chatText, &--profileText {
       font-size: .75rem;
       padding-top: .25rem;
     }
