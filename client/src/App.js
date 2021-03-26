@@ -10,6 +10,7 @@ import ConfigLocation from "./components/ConfigLocation/ConfigLocation";
 import ConfigGender from "./components/ConfigGender/ConfigGender";
 import ConfigWelcome from "./components/ConfigWelcome/ConfigWelcome";
 import ConfigFinal from './components/ConfigFinal/ConfigFinal';
+import Bookmark from "./components/Bookmark/Bookmark";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/home" component={HomePage}/>
           <Route path="/chat" component={Chat}/>
           <Route path="/profile" component={Profile}/>
+          <Route path="/bookmark" render={(props) => <Bookmark {...props} /> } />
           <Redirect from="/" to="/login" />
         </Switch>
       </BrowserRouter>
