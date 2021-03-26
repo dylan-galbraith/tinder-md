@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.scss';
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
+import PostSignup from "./components/PostSignup/PostSignup";
 
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <Signup />
+          </Route>
+          <Route path="/post-signup">
+            <PostSignup />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -12,7 +12,7 @@ function Signup() {
           <input type="password" name="confirm-password" placeholder="password" required/>
         </div>
         <div>
-          <Link to="/">Signup</Link>
+          <Link to="/post-signup">Signup</Link>
         </div>
         <div>
           <span>
